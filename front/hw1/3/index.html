@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>HW-1</title>
+</head>
+<body>
+<header>
+    <nav class="navContainer">
+        <div class="logoBox">
+            <a class="logoLink" href="./index.html">Home<span class="logo-span">Work1</span></a>
+        </div>
+        <ul class="navList">
+            <li class="navItem"><a class="navLink active" href="#">Главная</a></li>
+            <li class="navItem"><a class="navLink" href="#">Ссылка1</a></li>
+            <li class="navItem"><a class="navLink" href="#">Ссылка2</a></li>
+            <li class="navItem"><a class="navLink" href="#">Ссылка3</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Home Work 1</h1>
+    <section class="textsSection">
+        <h2>Форматування тексту</h2>
+        <ul class="textBox textFormatting">
+            <li><mark>текст виділений</mark></li>
+            <li><u>текст підкреслений</u></li>
+            <li><s>текст закреслений</s></li>
+            <li><b>текст жирний</b></li>
+            <li><i>текст косий</i></li>
+        </ul>
+        <h3>Текст який зберігає пробіли і переноси</h3>
+        <div class="textBox">
+            <pre>
+              lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </pre>
+        </div>
+
+        <h3>Розділення горизонтальне</h3>
+        <div class="textBox">
+            <p class="firstLetter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Aliquid animi cumque cupiditate distinctio
+                earum et fugiat ipsum labore maxime modi nihil, odio praesentium quam quas quos unde, voluptatum? <br>
+                Dolor,
+                doloremque? <br> Animi, consequatur culpa eos ex libero minus omnis quas similique sint veniam! <br> Ab,
+                architecto
+                doloribus eos error facere illum iure, mollitia nemo nesciunt numquam omnis placeat qui sunt velit
+                voluptate?<br> Debitis, dignissimos error eveniet ex expedita maiores modi odio, possimus praesentium
+                provident ratione reprehenderit saepe sit. </p>
+        </div>
+    </section>
+
+    <section class="listsSection">
+        <h2>Cписки</h2>
+        <ul>
+            <li>
+                <h3>Невпорядкований список</h3>
+                <ul>
+                    <li>I</li>
+                    <li>Love</li>
+                    <li>Ukraine</li>
+                    <li>and Mom</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Впорядкований список</h3>
+                <ol>
+                    <li>Sleep</li>
+                    <li>Eat</li>
+                    <li>Coding</li>
+                    <li>Repeat</li>
+                </ol>
+            </li>
+            <li>
+                <h3>Списки описук</h3>
+                <dl>
+                    <dt>Київ -> Кременчук</dt>
+                    <dd>- 02:00 - 13:45</dd>
+                    <dt>Львів -> Одеса</dt>
+                    <dd>- 10:00 - 14:45</dd>
+                    <dt>Харків -> Херсон</dt>
+                    <dd>- 19:00 - 14:45</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+    <section class="textWithCodeSection">
+        <h2>Текст кусок коду</h2>
+        <div class="textBox">
+            <p>
+                <code>
+                    function createBanana () {<Br>
+                    return ('b' + 'a' + + 'a' + 'a').toLowerCase()<Br>
+                    }
+                </code>
+            </p>
+        </div>
+    </section>
+    <section class="formSection">
+        <h2>Форма</h2>
+        <form class="form">
+            <fieldset class="inputs">
+                <legend>Введіть свої дані</legend>
+                <label>
+                    Ім'я
+                    <input type="text" name="name" placeholder="Введіть Ім'я"/>
+                </label>
+                <label>
+                    Прізвище
+                    <input type="text" name="surname" placeholder="Введіть Прізвище"/>
+                </label>
+            </fieldset>
+
+            <fieldset class="checkboxGender">
+                <legend>Виберіть вашу стать</legend>
+                <label>
+                    <input type="checkbox" name="man" value="man">
+                    Чоловік
+                </label>
+                <label>
+                    <input type="checkbox" name="woman" value="woman">
+                    Жінка
+                </label>
+            </fieldset>
+
+            <fieldset class="checkboxSubscribe">
+                <legend>Виберіть підписку</legend>
+                <label>
+                    <input type="checkbox" name="week" value="week">
+                    Тиждень
+                </label>
+                <label>
+                    <input type="checkbox" name="month" value="month">
+                    Місяць
+                </label>
+                <label>
+                    <input type="checkbox" name="year" value="year">
+                    Рік
+                </label>
+            </fieldset>
+
+            <button type="submit">Підписатыся</button>
+        </form>
+    </section>
+    <section class="tableSection">
+        <h2>Таблиця</h2>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer>
+    <div class="footerBox">
+        <div class="logoBox">
+            <a class="logoLink" href="./index.html">Home<span class="logo-span">Work1</span></a>
+        </div>
+        <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contactsList">
+            <li class="contactsItem">
+                <a class="contactsLink mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contactsItem">
+                <a  class="contactsLink phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyrightBox">
+        <p>© 2022 My Home Work</p>
+    </div>
+</footer>
+</body>
+</html>
