@@ -7,7 +7,7 @@
 
 const startIncrementalInterval = (callback, interval = 100, intervalIncrement = 100, iteration = 1) => {
     if (iteration >= 6) {
-        intervalIncrement *= 2
+        intervalIncrement += 100
         interval = intervalIncrement
         iteration = 1
     }
