@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section class="container">
     <Hero />
     <Counter />
   </section>

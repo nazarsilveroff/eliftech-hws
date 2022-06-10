@@ -1,8 +1,8 @@
 <template>
   <div class="neon-title">
     <div class="text">
-      <h1>This is my home work</h1>
-      <h1>This is my home work</h1>
+      <h1>home work</h1>
+      <h1>home work</h1>
     </div>
   </div>
 </template>
@@ -20,11 +20,12 @@ class Hero extends Vue {
 
 <style scoped>
 .neon-title {
-  margin-top: 80px;
+  width: fit-content;
+  padding: 15px 20px;
+  margin: 80px auto 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
   font-family: monospace;
   border: 4px solid #fff;
   border-radius: 10px;
